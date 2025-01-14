@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyC0-Uu4CwqiUn4vwfYDDNIZ8tboX2n3UHs",
   authDomain: "twitter-clone-eb603.firebaseapp.com",
@@ -15,3 +16,5 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
 export const provider = new GoogleAuthProvider();
+
+export const db = getFirestore(app);

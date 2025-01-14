@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.modal:hover .modal-set {
+  display: block !important;
+}
+
+.modal-set {
+  display: none;
+}
